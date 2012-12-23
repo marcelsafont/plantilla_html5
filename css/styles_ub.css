@@ -1,7 +1,95 @@
 html{
-background-color: #ccc;
+	margin:0;
+	padding:0;
+	background-color: #ccc;
+}
+
+header hgroup{
+background: url("../img/banner_exp.jpg");
+clear:both;
+}
+
+header hgroup h2, header hgroup h1 {
+color:#fff;
+}
+
+#idiomes{
+	display:inline-block;
+	background-color:#ccc;
+	max-width:300px;
+	float:right;
+	border-bottom-left-radius:1em;
+}
+
+
+#logo{
+	display:inline;
+	float:left;
+}
+
+#idiomes ul{
+	list-style-type: none;
+}
+
+#idiomes ul li{
+	float:left;
+	padding:10px;
 }
 
 #page{
+	padding:5px;
+	max-width:960px;
+	margin:auto;
 	background-color: #fff;
+	box-shadow:0px 3px 5px #333333;
+}
+
+#aside{
+	border:1px solid #eee;
+	border-radius:10px;
+	display: inline-block;
+	min-width: 200px;
+	float:left;
+
+}
+
+#main-nav{
+	
+}
+
+#main-nav ul{
+	list-style-type: none;
+	padding:0;
+
+}
+
+#main-nav h1{
+	margin-top:0;
+	padding:4px;
+	background-color: #eee;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+#content{
+	display: inline-block;
+	float:left;
+	max-width:700px;
+	margin-left:10px;
+}
+
+
+#inside-content{
+	display: inline-block;
+}
+
+
+#peu{
+	background-color: #eee;
+	display:inline-block;
+	width:100%;
+}
+
+#peu ul li{
+	float:left;
 }
