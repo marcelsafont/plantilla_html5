@@ -2,10 +2,29 @@ html{
 	margin:0;
 	padding:0;
 	background-color: #ccc;
+	font-family:arial;
+	font-size:125%;
+}
+
+body{
+	font-size:0.6em;
+}
+
+a:link, a:visited, a:active {
+    border: medium none;
+    color: #333333;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    border-bottom: 1px dotted #0059A2;
+    color: #0059A2;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 header hgroup{
 background: url("../img/banner_exp.jpg");
+height:120px;
 clear:both;
 }
 
@@ -18,17 +37,20 @@ color:#fff;
 	background-color:#ccc;
 	max-width:300px;
 	float:right;
-	border-bottom-left-radius:1em;
+	border-bottom-left-radius:10px;
+	height:30px;
 }
 
 
 #logo{
 	display:inline;
 	float:left;
+	margin:10px 0 10px 15px;
 }
 
 #idiomes ul{
 	list-style-type: none;
+	margin-top:0;
 }
 
 #idiomes ul li{
@@ -36,45 +58,62 @@ color:#fff;
 	padding:10px;
 }
 
+
+
 #page{
-	padding:5px;
 	max-width:960px;
 	margin:auto;
 	background-color: #fff;
 	box-shadow:0px 3px 5px #333333;
+	margin-top:-10px;
 }
 
 #aside{
-	border:1px solid #eee;
-	border-radius:10px;
 	display: inline-block;
-	min-width: 200px;
+	width:20%;
+	min-width: 170px;
 	float:left;
 
 }
 
-#main-nav{
+#wrapper{
+width:100%;
+margin-top:10px;
+padding:0 5px 0 5px;
+}
+
+#main-nav, #info{
+	border:1px solid #eee;
+	border-radius:7px;
+	margin-bottom:7px;
 	
 }
 
 #main-nav ul{
 	list-style-type: none;
-	padding:0;
+	padding-left:10px;
 
 }
 
-#main-nav h1{
+#main-nav ul li{
+	padding:4px 0 4px 0;
+
+}
+
+
+#main-nav h1, #info h1{
 	margin-top:0;
 	padding:4px;
 	background-color: #eee;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
+	border-top-left-radius:7px;
+	border-top-right-radius:7px;
+	font-size:1.1em;
 }
 
 #content{
-	display: inline-block;
+	display: inline;
+	width:75%;
 	float:left;
-	max-width:700px;
 	margin-left:10px;
 }
 
@@ -87,9 +126,19 @@ color:#fff;
 #peu{
 	background-color: #eee;
 	display:inline-block;
+	height:90px;
 	width:100%;
 }
 
 #peu ul li{
 	float:left;
 }
+
+#peu ul.data{
+	margin-top:40px;
+	list-style-type: none;
+}
+
+#peu ul.data li{
+	padding-left:10px;
+} 
