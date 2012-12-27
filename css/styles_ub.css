@@ -23,9 +23,19 @@ a:hover, a:focus {
 }
 
 header hgroup{
-background: url("../img/banner_exp.jpg");
-height:120px;
-clear:both;
+	position: relative;
+	top:-100px;
+}
+
+#capcalera{
+	display:inline-block;
+	width:100%;
+	overflow:hidden;
+	height:130px;
+}
+
+#capcalera img{
+	
 }
 
 header hgroup h2, header hgroup h1 {
@@ -110,6 +120,15 @@ padding:0 5px 0 5px;
 	font-size:1.1em;
 }
 
+#main-nav #button{
+	position:relative;
+	top:-100px;
+	right:-180px;
+	height:20px;
+	width:30px;
+	background-color: #000;
+}
+
 #content{
 	display: inline;
 	width:75%;
@@ -142,3 +161,64 @@ padding:0 5px 0 5px;
 #peu ul.data li{
 	padding-left:10px;
 } 
+
+#boto{
+	display:none;
+	background:url("../img/nav-icon.png") no-repeat 10px 5px;
+	background-color: #000;
+	height:30px;
+	width:40px;
+	border-bottom-right-radius:10px;
+	text-indent:-300px;
+	box-shadow: 3px 3px 3px #000;
+}
+
+@media only screen and (max-width:800px) {
+	#content{
+		width:65%;
+	}
+}
+
+@media only screen and (max-width:550px) {
+#boto{
+	display:block;
+	position:absolute;
+	left:200px;
+	
+}
+
+#main-nav {
+	position:fixed;
+	left:-200px;
+	top:0;
+	background-color: #fff;
+	border-radius:0;
+	width:200px;
+}
+
+#main-nav h1{
+	display:none;
+}
+
+#main-nav ul li{
+	font-size:1.2em;
+	border-bottom:1px solid #000;
+
+}
+
+#info{
+	display:none;
+}
+
+#content{
+	width:90%;
+}
+
+#idiomes{
+	float:none;
+	border-bottom-left-radius:0;
+	width:100%;
+	max-width:none;
+}
+
+}
