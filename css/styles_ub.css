@@ -230,12 +230,25 @@ ul.data li{
 }
 
 #main-nav ul li{
-	font-size:1.3em;
-	border-bottom:1px solid #000;
 	background: none;
-	background-color: #ccc;
-
+	padding:0;
+	
 }
+
+#main-nav ul li a{
+	font-size:1.3em;
+	display:block;
+	height: 40px;
+	width:190px;
+	background-color: #ccc;
+	border-bottom:1px solid #000;
+	padding:5px;
+}
+
+#main-nav ul li a:hover{
+	background-color: #fff;
+}
+
 
 #info{
 	display:none;
