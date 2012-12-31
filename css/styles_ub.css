@@ -218,7 +218,7 @@ ul.data li{
 
 #main-nav {
 	position:fixed;
-	left:-200px;
+	left:-205px;
 	top:0;
 	background-color: #fff;
 	border-radius:0;
@@ -268,7 +268,7 @@ ul.data li{
 	border-bottom-left-radius:0;
 	width:100%;
 	margin-bottom:10px;
-	max-width:none;
+	max-width:100%;
 }
 
 ul.data li{

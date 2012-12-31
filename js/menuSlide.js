@@ -10,7 +10,7 @@ $(document).ready(function(){
  	}
  	else{
  		e.preventDefault();
- 		$(menu).animate({left:-200});
+ 		$(menu).animate({left:-205});
  	}
  });
 
