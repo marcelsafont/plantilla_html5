@@ -1,6 +1,5 @@
 html{
-	margin:0;
-	padding:0;
+	
 	background-color: #ccc;
 	font-family:arial;
 	font-size:125%;
@@ -8,6 +7,8 @@ html{
 
 body{
 	font-size:0.6em;
+	margin:0;
+	padding:0;
 }
 
 a:link, a:visited, a:active {
@@ -189,6 +190,10 @@ ul.data li{
 }
 
 @media only screen and (max-width:550px) {
+
+#page{
+	width:100%;
+}
 
 #capcalera img{
 	display:none;
