@@ -204,7 +204,7 @@ ul.data li{
 }
 
 #capcalera{
-	background-color:#000;
+	background:url("../img/fons_alternatiu.jpg");
 }
 
 
@@ -218,8 +218,8 @@ ul.data li{
 
 #main-nav {
 	position:fixed;
-	left:-205px;
-	top:0;
+	right:0;
+	top:200px;
 	background-color: #fff;
 	border-radius:0;
 	width:200px;
@@ -264,12 +264,37 @@ ul.data li{
 }
 
 #idiomes{
-	float:none;
-	border-bottom-left-radius:0;
-	width:100%;
-	margin-bottom:10px;
-	max-width:100%;
+	position:relative;
+	top:10px;
+	z-index:666;
+	background-color: #fff;
+	display: inline-block;
 }
+
+#idiomes ul li{
+	float:none;
+	padding-right:40px;
+	background-color: #fff;
+}
+
+
+#idiomes ul li a{
+	font-size:1.2em;
+	font-weight: bold;
+}
+
+
+
+#idiomes ul li {
+	opacity:0;
+}
+
+
+#idiomes ul li:first-child{
+	opacity:1;
+	background: url("../img/down_arrow_lang.jpg") no-repeat 60px 7px ;
+}
+
 
 ul.data li{
 	float:none;
