@@ -5,6 +5,8 @@ html{
 	font-size:125%;
 }
 
+.tinynav { display: none }
+
 body{
 	font-size:0.6em;
 	margin:0;
@@ -54,6 +56,11 @@ color:#fff;
 }
 
 
+#idiomes li.selected a{
+	font-weight:bold;
+}
+
+
 #logo{
 	display:inline;
 	float:left;
@@ -68,6 +75,10 @@ color:#fff;
 #idiomes ul li{
 	float:left;
 	padding:10px;
+}
+
+#idiomes.mov ul li{
+	float:none;
 }
 
 
@@ -183,11 +194,15 @@ ul.data li{
 	box-shadow: 3px 3px 3px #000;
 }
 
+/*estils per amplada inferior a 800px*/
+
 @media only screen and (max-width:800px) {
 	#content{
 		width:65%;
 	}
 }
+
+/*estils per amplada inferior a 550px*/
 
 @media only screen and (max-width:550px) {
 
@@ -216,44 +231,13 @@ ul.data li{
 	
 }
 
-#main-nav {
-	position:fixed;
-	right:0;
-	top:200px;
-	background-color: #fff;
-	border-radius:0;
-	width:200px;
+#main-nav{
+	border:none;
 }
 
-#main-nav ul{
-	padding:0;
-	margin:0;
-}
-
-#main-nav h1{
+#main-nav h1, #main-nav ul{
 	display:none;
 }
-
-#main-nav ul li{
-	background: none;
-	padding:0;
-	
-}
-
-#main-nav ul li a{
-	font-size:1.3em;
-	display:block;
-	height: 40px;
-	width:190px;
-	background-color: #ccc;
-	border-bottom:1px solid #000;
-	padding:5px;
-}
-
-#main-nav ul li a:hover{
-	background-color: #fff;
-}
-
 
 #info{
 	display:none;
@@ -261,40 +245,32 @@ ul.data li{
 
 #content{
 	width:90%;
+	margin-top:20px;
 }
+
+
+
+.js #tinynav1 { display: block;
+ background-color: transparent;
+  border:none;
+	width: 120px;
+   height: 34px;
+   
+  background:url('../img/down_arrow_lang.jpg') no-repeat 60px 0px;
+}
+.js #tinynav2{display:block}
 
 #idiomes{
-	position:relative;
-	top:10px;
-	z-index:666;
-	background-color: #fff;
-	display: inline-block;
+	margin-top:20px;
+	margin-right:20px;
+	background-color: transparent;
+	width:100px;
+	overflow: hidden;
 }
 
-#idiomes ul li{
-	float:none;
-	padding-right:40px;
-	background-color: #fff;
+.js #idiomes ul{
+	display:none;
 }
-
-
-#idiomes ul li a{
-	font-size:1.2em;
-	font-weight: bold;
-}
-
-
-
-#idiomes ul li {
-	opacity:0;
-}
-
-
-#idiomes ul li:first-child{
-	opacity:1;
-	background: url("../img/down_arrow_lang.jpg") no-repeat 60px 7px ;
-}
-
 
 ul.data li{
 	float:none;
