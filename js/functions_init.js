@@ -17,6 +17,10 @@ $(document).ready(function(){
 
 	/*menu navegacio*/
 
+	$('#main-nav h1').click(function(){
+		$(this).next('ul').slideToggle();
+	})
+
 
 
 })

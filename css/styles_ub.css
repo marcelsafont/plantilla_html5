@@ -269,9 +269,11 @@ ul.data li{
 
 #main-nav{
 	border:none;
+	position:absolute;
+	top:220px;
 }
 
-#main-nav h1, #main-nav ul{
+#main-nav ul{
 	display:none;
 }
 
