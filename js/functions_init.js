@@ -1,12 +1,22 @@
 $(document).ready(function(){
-	$('html').addClass('js');
 	
-    $(".js #idiomes ul").tinyNav({
-    	 active: 'selected',
-    });
+	/*menu idiomes*/
 
-    $('.js #main-nav ul:first').tinyNav({
-    	header: 'Menu',
-    })
-  
+	$('#idiomes').addClass('js');
+	$('#idiomes li.selected').find('a').clone().prependTo('#page').addClass('langhide');
+	$('.langhide').click(function(){
+		$('#idiomes').slideToggle('fast', function(){
+			$('.bg_gris').toggleClass('active');
+		});
+		$(this).toggleClass('active');
+	});
+	$('<div></div>', {
+		'class': 'bg_gris',
+	}).prependTo('#page');
+
+
+	/*menu navegacio*/
+
+
+
 })

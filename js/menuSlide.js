@@ -21,6 +21,8 @@ $(document).ready(function(){
  	}
  });
 
+ $('#idiomes li.selected').find('a').clone().appendTo('#page');
+
 /*menu idiomes amagat*/
 /*if(iw <= 550){
 	$('#idiomes').addClass('mov');
