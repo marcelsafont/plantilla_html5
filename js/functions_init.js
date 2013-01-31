@@ -17,10 +17,11 @@ $(document).ready(function(){
 
 	/*menu navegacio*/
 
-	$('#main-nav h1').click(function(){
+	$('#main-nav h1').addClass('mobil');
+	$('h1.mobil').click(function(){
 		$(this).next('ul').slideToggle();
 	})
-
-
-
+	
+	
 })
+

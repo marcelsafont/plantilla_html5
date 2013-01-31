@@ -129,11 +129,13 @@ display:inline-block;
 	border-radius:7px;
 	margin-bottom:7px;
 	
+	
 }
 
 #main-nav ul{
 	list-style-type: none;
 	padding-left:10px;
+	display:block;
 
 }
 
@@ -174,7 +176,7 @@ display:inline-block;
 #content{
 	display: inline;
 	width:75%;
-	float:left;
+	float:right;
 	margin-left:10px;
 }
 
@@ -215,11 +217,12 @@ ul.data li{
 
 
 
+
 /*estils per amplada inferior a 960px*/
 
 
 
-@media only screen and (max-width:960px) {
+@media only screen and (max-width:800px) {
 	#content{
 		width:65%;
 	}
@@ -235,6 +238,68 @@ ul.data li{
 		width:100%;
 	}
 
+	#main-nav{
+		position:absolute;
+		top:210px;
+		left:20px;
+		margin-bottom:10px;
+		border:none;
+	}
+
+	#main-nav h1{
+		background: url("css_img/menu_light.png") no-repeat scroll center 0 #0058A1;
+    border: 2px solid #0058A1;
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    height: 25px;
+    margin-bottom: 10px;
+    padding: 10px 0 0 10px;
+    position: relative;
+    text-transform: uppercase;
+    width: 57px;
+    cursor:pointer;
+	}
+
+
+	#main-nav ul{
+		display:none;
+		width:240px;
+	}
+
+	#main-nav ul li{
+		background-color:#eee;
+		height:18px;
+		font-size:16px;
+		padding:10px;
+	}
+
+	#aside{
+		float:none;
+		width:100%;
+		
+
+	}
+
+	#content{
+		float:none;
+	}
+
+	#info{
+		background-color:#fff;
+		border-radius:0;
+		border:1px solid #ccc;
+		margin-left:-10px;
+		width:100%;
+		display:inline-block;
+	}
+
+	#info ul li{
+		float:left;
+	}
+
+
 }
 
 
@@ -246,103 +311,90 @@ ul.data li{
 @media only screen and (max-width:550px) {
 
 
-#capcalera img{
-	display:none;
-}
+		#capcalera img{
+			display:none;
+		}
 
-#capcalera hgroup{
-	top:0;
-}
+		#capcalera hgroup{
+			top:0;
+		}
 
-#capcalera{
-	background:url("../img/fons_alternatiu.jpg");
-}
-
-
-#boto{
-	display:block;
-	position:absolute;
-	left:200px;
-	top:80px;
-	
-}
-
-#main-nav{
-	border:none;
-	position:absolute;
-	top:220px;
-}
-
-#main-nav ul{
-	display:none;
-}
-
-#info{
-	display:none;
-}
-
-#content{
-	width:90%;
-	margin-top:20px;
-}
+		#capcalera{
+			background:url("../img/fons_alternatiu.jpg");
+		}
 
 
-#idiomes{
-	position:absolute;
-	top:30px;
-	right:10px;
-	z-index:666;
-	background-color: transparent; 
-	height:50px;
-	border:none;
+		#boto{
+			display:block;
+			position:absolute;
+			left:200px;
+			top:80px;
+			
+		}
 
-}
 
-.js{
-	display:none;	
-}
+		#content{
+			width:90%;
+			margin-top:20px;
+		}
 
-#idiomes ul{
-	background-color: #fff;
-	border-radius:10px;
-	border:1px solid #ccc;
-	margin-left:0;
-	padding-left:0;
-	width:110px;
-}
 
-#idiomes ul li{
-	float:none;
-	width:100%;
-	border-bottom:1px solid #ccc;
-	width: 90px;
-}
+		#idiomes{
+			position:absolute;
+			top:30px;
+			right:10px;
+			z-index:666;
+			background-color: transparent; 
+			height:50px;
+			border:none;
 
-.langhide{
-	display: block;
-	z-index:110;
-}
+		}
 
-ul.data li{
-	float:none;
-}
+		.js{
+			display:none;	
+		}
 
-#page .bg_gris{
-	background-color: #ccc;
-	display:block;
-	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	z-index:-1;
-	opacity: 0.6;
-}
+		#idiomes ul{
+			background-color: #fff;
+			border-radius:10px;
+			border:1px solid #ccc;
+			margin-left:0;
+			padding-left:0;
+			width:110px;
+		}
 
-#page .bg_gris.active{
-	z-index:60;
+		#idiomes ul li{
+			float:none;
+			width:100%;
+			border-bottom:1px solid #ccc;
+			width: 90px;
+		}
 
-}
+		.langhide{
+			display: block;
+			z-index:110;
+		}
+
+		ul.data li{
+			float:none;
+		}
+
+		#page .bg_gris{
+			background-color: #ccc;
+			display:block;
+			position: absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			z-index:-1;
+			opacity: 0.6;
+		}
+
+		#page .bg_gris.active{
+			z-index:60;
+
+		}
 
 
 }
