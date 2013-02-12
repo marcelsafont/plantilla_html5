@@ -38,9 +38,6 @@ header hgroup{
 	height:130px;
 }
 
-#capcalera img{
-	
-}
 
 header hgroup h2, header hgroup h1 {
 color:#fff;
@@ -191,7 +188,10 @@ display:inline-block;
 	display:inline-block;
 	min-height:90px;
 	width:100%;
+	box-shadow: 0px -3px 3px #ccc;
 }
+
+
 
 ul.data{
 	margin-top:40px;
@@ -215,6 +215,34 @@ ul.data li{
 	box-shadow: 3px 3px 3px #000;
 }
 
+/*estils xarxes soxials peu*/
+
+#xarxes-socials{
+	background: url('../img/bg_footer.png') no-repeat;
+	width:100%;
+	display:inline-block;
+	height:40px;
+}
+
+#xarxes-socials ul{
+	margin:0;
+	float:right;
+	width:300px;
+	list-style-type: none;
+}
+
+#xarxes-socials ul li{
+	float:left;
+	padding-right:10px;
+	text-indent:-1000px;
+	background: url('css_img/icones-sprite.png') no-repeat;
+	
+}
+
+
+#xarxes-socials ul li a.link-facebook{
+	background-position: 0px -93px
+}
 
 
 
@@ -299,6 +327,14 @@ ul.data li{
 		float:left;
 	}
 
+	#main-nav ul.open{
+		display:block;
+	}
+
+	#main-nav h1.open{
+		width:200px;
+	}
+
 
 }
 
@@ -321,6 +357,7 @@ ul.data li{
 
 		#capcalera{
 			background:url("../img/fons_alternatiu.jpg");
+			height:100px;
 		}
 
 
@@ -394,6 +431,10 @@ ul.data li{
 		#page .bg_gris.active{
 			z-index:60;
 
+		}
+
+		#main-nav{
+			top:180px;
 		}
 
 

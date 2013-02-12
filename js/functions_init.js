@@ -19,7 +19,8 @@ $(document).ready(function(){
 
 	$('#main-nav h1').addClass('mobil');
 	$('h1.mobil').click(function(){
-		$(this).next('ul').slideToggle();
+		$(this).next('ul').toggleClass('open');
+		$(this).toggleClass('open');
 	})
 	
 	
