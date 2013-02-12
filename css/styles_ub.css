@@ -310,7 +310,6 @@ ul.data li{
 	#main-nav{
 		position:absolute;
 		top:210px;
-		left:20px;
 		margin-bottom:10px;
 		border:none;
 		z-index:11;
@@ -368,8 +367,8 @@ ul.data li{
 		background-color:#fff;
 		border-radius:0;
 		border:1px solid #ccc;
-		margin:10px 0 0 -10px;
-		width:100%;
+		margin:10px 0 0 0;
+		width:99%;
 		display:inline-block;
 		background-image: none;
 	}
@@ -401,6 +400,7 @@ ul.data li{
 			height:100%;
 			z-index:-1;
 			opacity: 0.6;
+			cursor: pointer;
 		}
 
 		#page .bg_gris.active{
@@ -488,7 +488,6 @@ ul.data li{
 
 		.langhide{
 			display: block;
-			z-index:9;
 		}
 
 		ul.data li{
