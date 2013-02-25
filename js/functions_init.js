@@ -71,7 +71,13 @@ $(document).ready(function(){
 	$('#info-link').click(function(){
 		$('#infomobil').slideToggle();
 	})
-
 	
+	/*ifarem transparente*/
+	$('iframe').each(function(){
+        var url = $(this).attr("src");
+        $(this).attr("src",url+"?wmode=transparent");
+    });
+		
 })
+
 
