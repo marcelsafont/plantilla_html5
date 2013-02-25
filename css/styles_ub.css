@@ -25,6 +25,10 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
+img, iframe, video{
+width:100%;
+}
+
 header hgroup{
 	position: relative;
 	top:-100px;
@@ -105,14 +109,53 @@ color:#fff;
 }
 
 
+/*plantilla 1*/
 
-#aside{
+#sidebar{
 	display: inline-block;
 	width:20%;
 	min-width: 160px;
 	float:left;
 
 }
+
+ #content{
+	display: inline;
+	width:77%;
+	float:right;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+
+/*plantilla 2*/
+
+.plantilla2 #wrapper{
+	width:99%;
+}
+
+.plantilla2 #sidebar-right{
+	float:right;
+	width:20%;
+}
+
+.plantilla2 #content{
+	width:58%;
+	float:right;
+}
+
+.plantilla2 #sidebar{
+	width:20%;
+}
+
+/*plantilla 3*/
+
+.plantilla3 #content{
+	width:98%;
+}
+
+
+
 
 #wrapper{
 width:100%;
@@ -161,6 +204,10 @@ display:inline-block;
 	font-size:1.1em;
 }
 
+#main-nav ul > li > ul{
+		display: block;
+	}
+
 #main-nav #button{
 	position:relative;
 	top:-100px;
@@ -170,13 +217,7 @@ display:inline-block;
 	background-color: #000;
 }
 
-#content{
-	display: inline;
-	width:77%;
-	float:right;
-	margin-left:1%;
-	margin-right:1%;
-}
+
 
 
 #inside-content{
@@ -282,18 +323,30 @@ ul.data li{
 	background-position: 0 0px;
 }
 
+#infomobil{
+	display:none;
+}
 
 
 
-/*estils per amplada inferior a 960px*/
+
+
+
+/*estils per amplada inferior a 800px*/
 
 
 
 @media only screen and (max-width:800px) {
 	
-	#content{
-		width:64%;
+	#sidebar-right{
+		display:none;
 	}
+
+
+	.plantilla2 #content{
+		width:98%;
+	}
+
 
 	#page{
 		width:100%;
@@ -309,7 +362,7 @@ ul.data li{
 
 	#main-nav{
 		position:absolute;
-		top:210px;
+		top:180px;
 		margin-bottom:10px;
 		border:none;
 		z-index:11;
@@ -332,35 +385,41 @@ ul.data li{
 	}
 
 
-	#main-nav ul{
+	#main-nav > ul{
 		display:none;
 		width:200px;
+		border:1px solid #ccc;
+		border-radius:10px;
+		background-color:#fff;
 
 	}
 
-	#main-nav ul.open{
+	
+
+	#main-nav > ul.open{
 		display:block;
 	}
 
-	#main-nav ul li{
-		background-color:#eee;
+	#main-nav > ul li{
 		height:18px;
 		font-size:16px;
-		padding-left:20px;
-		background-position:10px 11px;
+		padding:10px 20px;
+		background-position:10px 16px;
+		border-bottom:1px dotted #E6E6E6;
 	}
 
 
 
-	#aside{
+	#sidebar, .plantilla2 #sidebar{
 		float:none;
 		width:100%;
-		
-
+	
 	}
 
-	#content{
+
+	#content, .plantilla2 #content{
 		float:none;
+		width:64%;
 	}
 
 	#info{
@@ -377,6 +436,33 @@ ul.data li{
 		margin-left:0;
 	}
 
+	#info h1 {
+		cursor: pointer;
+	}
+
+	#info.hide{
+		display:none;
+	}
+
+	#infomobil{
+	display:block;
+	margin-top:10px;
+	border:1px solid #ccc;
+	background-color: #eee;
+	}
+
+	#info-link{
+		display:block;
+		height:40px;
+		width:40px;
+		background: url('../img/i-info-big.png') no-repeat;
+		margin-top:10px;
+	}
+
+	#info-link:hover{
+		border: none;
+	}
+
 	
 
 	#main-nav h1.open{
@@ -387,10 +473,22 @@ ul.data li{
 		background: none;
 	}
 
+	#capcalera{
+		height:100px;
+	}
+
+	#capcalera img{
+		width:800px;
+	}
+
+	#main-nav ul > li > ul{
+		display: none;
+	}
+
 
 	/*estils capes grises*/
 		
-		#page .bg_gris, #page .bg_gris_menu{
+	#page .bg_gris, #page .bg_gris_menu{
 			background-color: #eee;
 			display:block;
 			position: absolute;
@@ -401,16 +499,16 @@ ul.data li{
 			z-index:-1;
 			opacity: 0.6;
 			cursor: pointer;
-		}
+	}
 
-		#page .bg_gris.active{
+	#page .bg_gris.active{
 			z-index:8;
 
-		}
+	}
 
-		#page .bg_gris_menu.active{
+	#page .bg_gris_menu.active{
 			z-index:10;
-		}
+	}
 
 
 
@@ -469,6 +567,10 @@ ul.data li{
 		.js{
 			display:none;	
 		}
+		
+		#idiomes.open{
+			display:block;
+		}
 
 		#idiomes ul{
 			background-color: #fff;
@@ -482,12 +584,20 @@ ul.data li{
 		#idiomes ul li{
 			float:none;
 			width:100%;
-			border-bottom:1px solid #ccc;
+			border-top:1px solid #ccc;
 			width: 90px;
+		}
+
+		#idiomes ul li.selected{
+			border-top:none;
 		}
 
 		.langhide{
 			display: block;
+		}
+
+		ul.data{
+			margin-top:10px;
 		}
 
 		ul.data li{

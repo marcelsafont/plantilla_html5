@@ -13,11 +13,14 @@ $(document).ready(function(){
 	$('#idiomes').addClass('js');
 	$('#idiomes li.selected').find('a').clone().prependTo('#page').addClass('langhide');
 	$('.langhide').click(function(){
-		$('#main-nav').css({'z-index':'0'})
-		$('#idiomes').slideToggle('fast', function(){
+		$(this).addClass('active');
+		$('#main-nav').css({'z-index':'0'});
+		
+		
+		$('#idiomes').toggleClass('open').promise().done(function(){
 			$('.bg_gris').toggleClass('active');
-		});
-		$(this).toggleClass('active');
+		})
+		
 
 	});
 	
@@ -40,8 +43,35 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 		$('h1.mobil').next('ul').removeClass('open');
 		$('h1.mobil').removeClass('open');
-		$('#idiomes').slideUp('fast');
+		$('#idiomes') .removeClass('open');
+		$('.langhide').removeClass('active');
+	});
+
+	$('#main-nav > ul > li > a').click(function(){
+		$(this).parent().find('ul').slideToggle();
 	})
+
+	/*MÉS INFO*/
+
+
+	$('#info').addClass('hide');
+	$('<div>',{
+		id :'infomobil'
+	}).appendTo('#sidebar');
+
+	$('#info > ul').clone().prependTo('#infomobil');
+
+	$('<a>',{
+		id:'info-link',
+		text: ' '
+	}).insertBefore('#infomobil');
+	
+	$('#infomobil').hide();
+
+	$('#info-link').click(function(){
+		$('#infomobil').slideToggle();
+	})
+
 	
 })
 
