@@ -29,6 +29,11 @@ img, iframe, video{
 width:100%;
 }
 
+#mediaspace_wrapper, #mediaspace_wrapper object{
+	width:100%;
+}
+
+
 header hgroup{
 	position: relative;
 	top:-100px;
@@ -191,7 +196,7 @@ display:inline-block;
 }
 
 #main-nav ul li ul li{
-	background: url('css_img/i-bullet-dash-blue.png') no-repeat 0px 9px;
+	background: url('css_img/i-bullet-dash-blue.png') no-repeat 0px 11px;
 }
 
 
@@ -264,7 +269,7 @@ ul.data li{
     padding-bottom: 1em;
 }
 
-#info ul {
+#info ul, #infomobil ul  {
     margin-bottom: 1.5em;
     margin-left: 0.5em;
     margin-top: 1em;
@@ -343,9 +348,7 @@ ul.data li{
 	}
 
 
-	.plantilla2 #content{
-		width:98%;
-	}
+	
 
 
 	#page{
@@ -363,25 +366,24 @@ ul.data li{
 	#main-nav{
 		position:absolute;
 		top:180px;
-		margin-bottom:10px;
 		border:none;
 		z-index:11;
 	}
 
 	#main-nav h1{
 		background: url("css_img/menu_light.png") no-repeat scroll center 0 #0058A1;
-    border: 2px solid #0058A1;
-    border-radius: 8px 8px 8px 8px;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: bold;
-    height: 25px;
-    margin-bottom: 10px;
-    padding: 10px 0 0 10px;
-    position: relative;
-    text-transform: uppercase;
-    width: 57px;
-    cursor:pointer;
+    	border: 2px solid #0058A1;
+    	border-radius: 8px 8px 8px 8px;
+    	color: #FFFFFF;
+    	font-size: 15px;
+    	font-weight: bold;
+    	height: 25px;
+   	 	margin-bottom: 10px;
+   	 	padding: 10px 0 0 10px;
+    	position: relative;
+    	text-transform: uppercase;
+    	width: 57px;
+    	cursor:pointer;
 	}
 
 
@@ -401,26 +403,39 @@ ul.data li{
 	}
 
 	#main-nav > ul li{
-		height:18px;
+		min-height:18px;
 		font-size:16px;
 		padding:10px 20px;
 		background-position:10px 16px;
-		border-bottom:1px dotted #E6E6E6;
+		/*border-bottom:1px dotted #E6E6E6;*/
 	}
 
+	#main-nav >ul li ul{
+		margin-top:5px;
+	}
+
+	#main-nav >ul li ul li{
+	background: url('css_img/i-bullet-dash-blue.png') no-repeat 0px 20px;
+	}
 
 
 	#sidebar, .plantilla2 #sidebar{
 		float:none;
 		width:100%;
+		margin-top:20px;
 	
 	}
 
 
 	#content, .plantilla2 #content{
-		float:none;
-		width:64%;
+		/*float:none;*/
+		width:98%;
+		float:left;
+		position:relative;
+		top:19px;
 	}
+
+	
 
 	#info{
 		background-color:#fff;
@@ -445,10 +460,10 @@ ul.data li{
 	}
 
 	#infomobil{
-	display:block;
-	margin-top:10px;
-	border:1px solid #ccc;
-	background-color: #eee;
+		display:block;
+		margin-top:10px;
+		border:1px solid #ccc;
+		background-color: #eee;
 	}
 
 	#info-link{
@@ -481,24 +496,22 @@ ul.data li{
 		width:800px;
 	}
 
-	#main-nav ul > li > ul{
-		display: none;
-	}
+	
 
 
 	/*estils capes grises*/
 		
 	#page .bg_gris, #page .bg_gris_menu{
-			background-color: #eee;
-			display:block;
-			position: absolute;
-			top:0;
-			left:0;
-			width:100%;
-			height:100%;
-			z-index:-1;
-			opacity: 0.6;
-			cursor: pointer;
+		background-color: #eee;
+		display:block;
+		position: absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		z-index:-1;
+		opacity: 0.6;
+		cursor: pointer;
 	}
 
 	#page .bg_gris.active{
@@ -548,7 +561,6 @@ ul.data li{
 
 		#content{
 			width:89%;
-			margin-top:20px;
 	        margin-right:1%;
 		}
 
@@ -608,6 +620,8 @@ ul.data li{
 		#main-nav{
 			top:180px;
 		}
+
+
 
 
 }

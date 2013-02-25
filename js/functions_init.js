@@ -19,7 +19,7 @@ $(document).ready(function(){
 		
 		$('#idiomes').toggleClass('open').promise().done(function(){
 			$('.bg_gris').toggleClass('active');
-		})
+		});
 		
 
 	});
@@ -38,6 +38,7 @@ $(document).ready(function(){
 		
 	});
 
+	
 	/*desabilitar el fons gris*/
 	$('.bg_gris').click(function(){
 		$(this).toggleClass('active');
@@ -47,9 +48,8 @@ $(document).ready(function(){
 		$('.langhide').removeClass('active');
 	});
 
-	$('#main-nav > ul > li > a').click(function(){
-		$(this).parent().find('ul').slideToggle();
-	})
+
+	
 
 	/*MÉS INFO*/
 
