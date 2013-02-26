@@ -35,9 +35,8 @@ $(document).ready(function(){
 		$(this).toggleClass('open').promise().done(function(){
     				$('.bg_gris').toggleClass('active');
 			});
-		
-	});
 
+	});
 	
 	/*desabilitar el fons gris*/
 	$('.bg_gris').click(function(){

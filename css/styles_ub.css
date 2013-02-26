@@ -1,9 +1,16 @@
 html{
-	
-	background-color: #ccc;
 	font-family:arial;
 	font-size:125%;
 	
+}
+
+h1, h2, h3, h4, h5{
+	margin:0;
+	padding:0;
+}
+
+ul, ol{
+	list-style-type: none;
 }
 
 
@@ -25,11 +32,6 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-img, iframe, video{
-width:100%;
-}
-
-
 
 header hgroup{
 	position: relative;
@@ -38,6 +40,8 @@ header hgroup{
 }
 
 #capcalera{
+	padding-top:16px;
+	background:url('css_img/franja.png') no-repeat top left;
 	display:inline-block;
 	width:100%;
 	overflow:hidden;
@@ -45,8 +49,9 @@ header hgroup{
 }
 
 
-header hgroup h2, header hgroup h1 {
+header h2, header hgroup h1 {
 color:#fff;
+
 }
 
 #idiomes{
@@ -83,11 +88,11 @@ color:#fff;
 #logo{
 	display:inline;
 	float:left;
-	margin:10px 0 10px 15px;
+	margin:13px 0 5px 28px;
+	width:216px;
 }
 
 #idiomes ul{
-	list-style-type: none;
 	margin-top:0;
 }
 
@@ -106,7 +111,7 @@ color:#fff;
 	max-width:960px;
 	margin:auto;
 	background-color: #fff;
-	box-shadow:0px 3px 5px #333333;
+	box-shadow:0px 4px 9px #333333;
 	margin-top:-10px;
 }
 
@@ -138,11 +143,15 @@ color:#fff;
 
 .plantilla2 #sidebar-right{
 	float:right;
-	width:20%;
+	width:24%;
+}
+
+.plantilla2 #sidebar-right img{
+	width:100%;
 }
 
 .plantilla2 #content{
-	width:58%;
+	width:54%;
 	float:right;
 }
 
@@ -175,8 +184,7 @@ display:inline-block;
 }
 
 #main-nav ul{
-	list-style-type: none;
-	padding-left:10px;
+	padding-left:6px;
 	display:block;
 
 }
@@ -194,6 +202,7 @@ display:inline-block;
 
 #main-nav ul li ul li{
 	background: url('css_img/i-bullet-dash-blue.png') no-repeat 0px 11px;
+	margin-top:2px;
 }
 
 
@@ -208,6 +217,7 @@ display:inline-block;
 
 #main-nav ul > li > ul{
 		display: block;
+		margin-top:6px;
 	}
 
 #main-nav #button{
@@ -239,7 +249,6 @@ display:inline-block;
 
 ul.data{
 	margin-top:40px;
-	list-style-type: none;
 }
 
 ul.data li{
@@ -268,9 +277,8 @@ ul.data li{
 
 #info ul, #infomobil ul  {
     margin-bottom: 1.5em;
-    margin-left: 0.5em;
+    margin-left: 1em;
     margin-top: 1em;
-    list-style-type: none;
 }
 
 
@@ -330,24 +338,81 @@ ul.data li{
 }
 
 .video {
-	margin-top:20px;
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
+	max-width:450px;
 		
 
 }
 
-.video iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 70%;
-	height: 70%;
-	z-index:0;
+/*estils divs*/
+
+.intro-txt{
+	background: none repeat scroll 0 0 #F4F4F4;
+   	clear: both;
+    margin-bottom: 2em;
+   	padding:2%;
+   	width:96%;
 }
+
+.intro-txt img{
+	float:left;
+	padding:2%;
+}
+
+.dist-2-col{
+	width:96%;
+	padding:2%;
+}
+
+.dist-2-col img{
+	float:left;
+	padding: 0 3% 2% 0;
+}
+
+.dist-2-col > ul{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+.dist-2-col > ul > li{
+float:left;
+width:48%;
+padding:1%;
+}
+
+.dist-2-col > ul > li > img{
+	float:left;
+	padding-right:4%;
+
+}
+
+.dist-2-col  p{
+	margin-top:0;
+}
+
+#content h3{
+border-bottom:1px solid #ccc;
+font-size:1.3em;
+padding:0;
+margin-bottom:10px;
+}
+
+.dist-2-col h4{
+	background: url("css_img/i-arrow-menu.png") no-repeat scroll left 0.4em transparent;
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+    margin-left:95px;
+    padding-left:10px;
+    margin-top:0;
+}
+
+.dist-2-col h4 a{
+color: #0059A2;
+}
+
+
+
+
 
 
 
@@ -378,7 +443,7 @@ ul.data li{
 
 	#main-nav{
 		position:absolute;
-		top:180px;
+		top:195px;
 		border:none;
 		z-index:11;
 	}
@@ -402,25 +467,30 @@ ul.data li{
 
 	#main-nav > ul{
 		display:none;
-		width:200px;
+		width:210px;
 		border:1px solid #ccc;
 		border-radius:10px;
 		background-color:#fff;
 
 	}
 
+	#main-nav h1.open{
+		width:210px;
+	}
+
 	
 
 	#main-nav > ul.open{
-		display:block;
+		display:inline-block;
+		max-width:210px;
+		font-size:1.3em;
+		margin-top:0px;
 	}
 
 	#main-nav > ul li{
 		min-height:18px;
-		font-size:16px;
-		padding:10px 20px;
+		padding:10px 5px 10px 17px;
 		background-position:10px 16px;
-		/*border-bottom:1px dotted #E6E6E6;*/
 	}
 
 	#main-nav >ul li ul{
@@ -445,7 +515,7 @@ ul.data li{
 		width:98%;
 		float:left;
 		position:relative;
-		top:19px;
+		top:35px;
 	}
 
 	
@@ -491,11 +561,6 @@ ul.data li{
 		border: none;
 	}
 
-	
-
-	#main-nav h1.open{
-		width:200px;
-	}
 
 	#xarxes-socials{
 		background: none;
@@ -533,7 +598,14 @@ ul.data li{
 	#page .bg_gris_menu.active{
 			z-index:10;
 	}
+
+	/*estils distribuidora*/
 	
+	.dist-2-col > ul > li{
+		float:none;
+		width:95%;
+		padding:1%;
+	}
 	
 
 
@@ -572,7 +644,7 @@ ul.data li{
 
 
 		#content{
-			width:89%;
+			width:95%;
 	        margin-right:1%;
 		}
 
@@ -633,11 +705,17 @@ ul.data li{
 			top:180px;
 		}
 
-		.video iframe{
-			
-			width: 90%;
-			height: 90%;
+
+		#logo {
+			margin:12px 0 3px 6px;
 		}
+
+		#logo img{
+			width:180px;
+		}
+
+		/*estils distribuidora*/
+		
 
 
 }
